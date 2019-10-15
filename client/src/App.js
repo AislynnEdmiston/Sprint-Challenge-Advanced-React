@@ -37,7 +37,7 @@ export default class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>Players!</h1>
-          <SearchButtons />
+          <SearchButtons country={this.state.player.country} />
           {this.state.player.map(athlete => <Players player={athlete}/>)}
         </header>
       </div>
