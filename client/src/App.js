@@ -34,12 +34,12 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="App App-header">
+        
           <NavBar />
           <h1>Players!</h1>
           {this.state.player.map(athlete => <Players player={athlete}/>)}
-        </header>
+      
       </div>
     )
   }
