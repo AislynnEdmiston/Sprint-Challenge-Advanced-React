@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
-import SearchButtons from './components/SearchButtons';
+import NavBar from './components/NavBar'
 import Players from './components/Players'
 
 
@@ -36,8 +36,8 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <NavBar />
           <h1>Players!</h1>
-          <SearchButtons country={this.state.player.country} />
           {this.state.player.map(athlete => <Players player={athlete}/>)}
         </header>
       </div>
